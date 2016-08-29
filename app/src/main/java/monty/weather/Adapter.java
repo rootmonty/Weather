@@ -61,7 +61,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.WeatherViewHolder> {
         holder.humidity.setText("Pressure :" + (list.get(position).getMain().getHumidity()));
        // Log.i(TAG,String.valueOf(list.get(position).getHumidity()));
         //holder.rating.setText(movies.get(position).getVoteAverage().toString());
-        
+
     }
 
     @Override
