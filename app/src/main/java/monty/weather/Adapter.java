@@ -54,14 +54,14 @@ public class Adapter extends RecyclerView.Adapter<Adapter.WeatherViewHolder> {
 
     @Override
     public void onBindViewHolder(WeatherViewHolder holder, final int position) {
-        holder.dt.setText("dt" + list.get(position).getDt()); //this is okay according to you ?yep
-        holder.temp.setText("temperature:"+ (list.get(position).getMain().getTemp())); // this ? na getting 0.0 value
-      //  Log.d("Gomchik", list.get(position).toString());
+        holder.dt.setText("dt" + list.get(position).getDt());
+        holder.temp.setText("temperature:"+ (list.get(position).getMain().getTemp()));
+
        // Log.i(TAG,String.valueOf(list.get(position).getTemp()));
         holder.humidity.setText("Pressure :" + (list.get(position).getMain().getHumidity()));
        // Log.i(TAG,String.valueOf(list.get(position).getHumidity()));
         //holder.rating.setText(movies.get(position).getVoteAverage().toString());
-        // call me okay bhyya just give me two min I will come out of house n call u    `
+        
     }
 
     @Override

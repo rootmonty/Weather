@@ -12,8 +12,7 @@ public interface WeatherApi {
 
     @GET("/data/2.5/forecast/city?q=Allahabad,India")
     Call<WeatherResponse> getWeatherforecast(@Query("APPID") String apikey);
-    //Bhyya aapko json tree bhi dikhata hun browser men maine object sahi define kia hai aap ye verify karlo udhr
-    //se, kk
+
     
 
 }
